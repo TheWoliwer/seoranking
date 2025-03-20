@@ -35,7 +35,27 @@ export default function Navbar() {
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
-              Panel
+              SEO Paneli
+            </Link>
+            <Link 
+              href="/keywords" 
+              className={`px-3 py-2 rounded-md text-sm font-medium ${
+                pathname === '/keywords' 
+                  ? 'text-blue-600 bg-blue-50' 
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              Anahtar Kelimeler
+            </Link>
+            <Link 
+              href="/stats" 
+              className={`px-3 py-2 rounded-md text-sm font-medium ${
+                pathname === '/stats' 
+                  ? 'text-blue-600 bg-blue-50' 
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              İstatistikler
             </Link>
           </div>
           

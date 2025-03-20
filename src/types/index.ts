@@ -27,4 +27,20 @@ export interface TrackedSite {
   lastCheck: string;
   score: number;
   rankings: SeoRankings;
+  keywords?: KeywordRanking[];
+}
+
+// Anahtar Kelime Sıralaması
+export interface KeywordRanking {
+  id: number;
+  keyword: string;
+  rank: number;
+  lastUpdated: string;
+  previousRank?: number;
+}
+
+// Anahtar Kelime Takibi Ekleme Formu için
+export interface AddKeywordFormData {
+  url: string;
+  keywords: string[];
 }
